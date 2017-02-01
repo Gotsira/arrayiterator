@@ -10,7 +10,7 @@ import java.util.NoSuchElementException;
  * @author Sirasath Piyapootinun
  *
  * @param <T>
- * 			 is the type of element returned by this iterator.
+ * 	is the type of element returned by this iterator.
  */	
 
 public class ArrayIterator<T> implements Iterator<T> {
@@ -25,7 +25,7 @@ public class ArrayIterator<T> implements Iterator<T> {
 	/**
 	* Initialize a new array iterator with the array to process.
 	* @param array 
-	* 			is the array to iterate over
+	* 	is the array to iterate over
 	*/
 	public ArrayIterator(T[] array) {
 		this.array = array;
@@ -53,7 +53,7 @@ public class ArrayIterator<T> implements Iterator<T> {
 	* Return the next non-null element from array, if any.
 	* @return the next non-null element in the array.
 	* @throws NoSuchElementException 
-	* 				if there are no more elements to return.
+	* 		if there are no more elements to return.
 	*/
 	@Override
 	public T next() {
@@ -71,9 +71,9 @@ public class ArrayIterator<T> implements Iterator<T> {
 	 * This method can only be called after next(). 
 	 * 
 	 * @throws IllegalStateException()
-	 * 			   if remove() is called without calling 
-	 * 			   next() first or if remove() is called
-	 * 			   more than once.
+	 * 		 if remove() is called without calling 
+	 * 		 next() first or if remove() is called
+	 * 		 more than once.
 	 */
 	public void remove() {
 		if(this.check) {
